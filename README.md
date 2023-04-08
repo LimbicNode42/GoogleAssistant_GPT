@@ -32,5 +32,7 @@ Each conversation that can be referred back to is per Google Assistant sessions 
 
 ### IMPROVEMENTS TODO: ###
 * Send conversation to Discord
+* Better validation
+* Better outputs (especially to Discord for things like code snippets)
 * Maintain conversations across Google Assistant sessions
 * Implement for Alexa
