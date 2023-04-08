@@ -10,17 +10,17 @@ def lambda_handler(event, context):
   session = body['session']['id']
   print("Session: " + session)
   
-  get_gpt_response(query, session)
+  gpt_reply = get_gpt_response(query, session)
   response = {
                 "session": {
-                  "id": "example_session_id",
+                  "id": session,
                   "params": {}
                 },
                 "prompt": {
                   "override": "false",
                   "firstSimple": {
-                    "speech": "Hello World.",
-                    "text": ""
+                    "speech": gpt_reply,
+                    "text": gpt_reply
                   }
                 },
                 "scene": {
