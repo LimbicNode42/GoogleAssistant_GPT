@@ -12,15 +12,15 @@ Lambda Function then makes a call to the gpt-3.5-turbo API and returns the reply
     "prompt": {
         "override": "false",
         "firstSimple": {
-        "speech": gpt_reply,
-        "text": gpt_reply
+            "speech": gpt_reply,
+            "text": gpt_reply
         }
     },
     "scene": {
         "name": "GPTLoop",
         "slots": {},
         "next": {
-        "name": "GPTLoop"
+            "name": "GPTLoop"
         }
     }
 }
